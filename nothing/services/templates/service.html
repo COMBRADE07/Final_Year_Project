@@ -1,0 +1,18 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title%}
+    Services
+{% endblock title%}
+
+{% block cssfiles %}
+<link rel="stylesheet" href={% static 'css/service.css' %}>
+{% endblock cssfiles %}
+
+{% block content%}
+    <h2>Hello This is service page </h2>
+    <div>
+        <form>
+            <input type="text" name="first name" placeholder="Enter first name">
+        </form>
+    </div>
+{% endblock content%}

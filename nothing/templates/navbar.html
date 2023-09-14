@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title%}
+        {% endblock title%}
+    </title>
+    <link rel="stylesheet" href={% static '/css/navbar.css' %}>
+    {% block cssfiles%}
+    {% endblock cssfiles%}
+</head>
+<body>
+    <ul>
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/service">Services</a></li>
+      <li><a href="#">Algorithms</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+    {% block content%}
+    {% endblock content%}
+</body>
+</html>

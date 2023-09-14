@@ -1,0 +1,13 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title%}
+    Home Page
+{% endblock title%}
+
+{% block cssfiles %}
+<link rel="stylesheet" href={% static 'css/home.css' %}>
+{% endblock cssfiles %}
+
+{% block content%}
+    <h1>Welcome to Home Page</h1>
+{% endblock content%}
