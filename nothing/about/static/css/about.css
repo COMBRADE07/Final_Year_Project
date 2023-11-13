@@ -1,0 +1,27 @@
+.developer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.developer b {
+  color: #007bff;
+}
+
+.container-fluid {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.name_1 {
+  color: #007bff;
+  margin-top: 10px;
+}
+
+.text_1,
+.text_11 {
+  color: #6c757d;
+}
