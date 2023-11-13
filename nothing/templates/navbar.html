@@ -15,11 +15,16 @@
     <ul>
       <li><a class="active" href="/">Home</a></li>
       <li><a href="/service">Services</a></li>
-      <li><a href="#">Algorithms</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="/algorithms">Algorithms</a></li>
+      <li><a href="/datasets">Dataset</a></li>
+      <li><a href="/about">About</a></li>
     </ul>
 
     {% block content%}
     {% endblock content%}
 </body>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+
 </html>
