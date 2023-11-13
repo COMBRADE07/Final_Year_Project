@@ -1,15 +1,191 @@
 {% extends 'navbar.html' %}
 {% load static %}
-{% block title%}
-    Dataset
-{% endblock title%}
+{% block title %}
+    about
+{% endblock title %}
 
 {% block cssfiles %}
-<link rel="stylesheet" href={% static 'css/home.css' %}>
+    <link rel="stylesheet" href="{% static 'css/dataset.css' %}">
 {% endblock cssfiles %}
 
-{% block content%}
-    <h1>Welcome to dataset sections.</h1>
+{% block content %}
+<h2 style="color:indigo"><center>
+    Housing data
+    </center>
+</h2>
+        <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Field</th>
+                <th>Data Type</th>
+                <th>Input</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Area</td>
+                <td>float</td>
 
-{% endblock content%}
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>BHK</td>
+                <td>float</td>
 
+            </tr>
+            <tr><td>3</td>
+                <td>Bathroom</td>
+                <td>float</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Furnishing</td>
+                <td>object</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Locality</td>
+                <td>object</td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Parking</td>
+                <td>object</td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Status</td>
+                <td>object</td>
+
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Transaction</td>
+                <td>object</td>
+
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Type</td>
+                <td>float</td>
+
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Per_Sqft</td>
+                <td>float</td>
+
+            </tr>
+                    <tr>
+                <td>11</td>
+                <td>Price</td>
+                <td>float</td>
+
+            </tr>
+        </tbody>
+    </table>
+<tr><tr>
+    <h2 style="color:indigo"><center>
+    Loan dataset
+    </center>
+</h2>
+       <table>
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Field</th>
+      <th>Description</th>
+      <th>Input Format</th>
+    </tr>
+    </thead>
+    <tr>
+      <td>1</td>
+      <td>Loan</td>
+      <td>A unique ID</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Gender</td>
+      <td>Gender of the applicant (Male/Female)</td>
+      <td>Male/Female</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Married</td>
+      <td>Marital status of the applicant (Yes/No)</td>
+      <td>Yes/No</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Dependents</td>
+      <td>Tells whether the applicant has any dependents or not</td>
+      <td>0/1/...</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Education</td>
+      <td>Tells us whether the applicant is graduated or not</td>
+            <td>Graduate/NotGraduate</td>
+
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Self_Employed</td>
+      <td>Defines whether the applicant is self-employed (Yes/No)</td>
+      <td>Yes/No</td>
+
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>ApplicantIncome</td>
+      <td>Applicant's income</td>
+      <td>e.g. 2000</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>CoapplicantIncome</td>
+      <td>Co-applicant's income</td>
+      <td>e.g. 1000</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>LoanAmount</td>
+      <td>Loan amount (in thousands)</td>
+      <td>e.g. 20 if you want 20k</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Loan_Amount_Term</td>
+      <td>Terms of the loan (in days)</td>
+      <td>e.g. 180 for 6 months</td>
+
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Credit_History</td>
+      <td>Credit history of individual's repayment of their debts</td>
+      <td>e.g. 0/1 where 0 is low score and 1 is good one</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Property_Area</td>
+      <td>Area of the property (Rural/Urban/Semi-urban)</td>
+      <td>e.g. Rural/Urban/Semi-urban</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Loan_Status</td>
+      <td>Status of the loan (Approved or Not)</td>
+      <td>NA
+      </td>
+    </tr>
+  </table>
+{% endblock content %}

@@ -1,9 +1,19 @@
 *{
 margin:0px;
-padding:0px;
+padding:0px;}
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    margin-top: 20px;
 }
-h1{
-color:red;
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
-h2{
-color:green}
+
+th {
+    background-color: #f2f2f2;
+}
+
