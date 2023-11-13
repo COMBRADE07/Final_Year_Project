@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title%}
+    algorithm
+{% endblock title%}
 
-</body>
-</html>
+{% block cssfiles %}
+<link rel="stylesheet" href={% static 'css/algorithm.css' %}>
+{% endblock cssfiles %}
+
+{% block content%}
+    <h1>Welcome to algorithm Page.</h1>
+    <h3>here is my content</h3>
+{% endblock content%}
+
