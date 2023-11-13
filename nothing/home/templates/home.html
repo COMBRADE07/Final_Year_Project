@@ -15,7 +15,9 @@
 
         <h2>Description</h2>
         <p>Random Forest is a popular machine learning algorithm that belongs to the ensemble learning family. It combines multiple decision trees to make predictions. Each decision tree in the Random Forest is built independently using a subset of the training data and a random subset of features. The final prediction is made by aggregating the predictions of all the individual trees.</p>
-
+        <div class="image-container">
+            <img src="{% static 'images/algorithm.png' %}" >
+        </div>
         <h2>Algorithm Steps</h2>
         <ol>
             <li><strong>Random selection of data:</strong> Random Forest randomly selects a subset of the training data, called a bootstrap sample, to build each decision tree. This process is known as bagging (bootstrap aggregating).</li>
@@ -50,7 +52,9 @@
 
         <h2>Description</h2>
         <p>Random Forest Regressor is an ensemble learning algorithm that belongs to the family of decision tree-based methods. It builds multiple decision trees during training and merges them together to get a more accurate and stable prediction. Here's an explanation of how the algorithm works along with its advantages and disadvantages:</p>
-
+        <div class="image-container">
+            <img src="{% static 'images/random_forest.png' %}" >
+        </div>
         <h2>Algorithm usage</h2>
         <ol>
             <li><strong>Bootstrap Sampling (Bagging):</strong> Random Forest starts by creating multiple random subsets of the training data through a process called bootstrap sampling. This involves randomly selecting data points with replacement, allowing some data points to appear in the sample multiple times, while others may not appear at all.
