@@ -19,9 +19,9 @@
         <h2>Algorithm Steps</h2>
         <ol>
             <li><strong>Random selection of data:</strong> Random Forest randomly selects a subset of the training data, called a bootstrap sample, to build each decision tree. This process is known as bagging (bootstrap aggregating).</li>
-            <li>Random selection of features: For each node in the decision tree, a random subset of features is considered to determine the best split. This helps to reduce the correlation between the trees and leads to more diverse and robust models.</li>
-            <li>Building decision trees: Each decision tree is grown using the selected subset of data and features. The trees are built by recursively partitioning the data based on feature thresholds, aiming to minimize impurity or maximize information gain.</li>
-            <li>Aggregating predictions: When making predictions, each decision tree in the Random Forest independently predicts the outcome, and the final prediction is determined by aggregating the individual tree predictions. The most common aggregation methods are majority voting for classification problems and averaging for regression problems.</li>
+            <li><strong>Random selection of features:</strong> For each node in the decision tree, a random subset of features is considered to determine the best split. This helps to reduce the correlation between the trees and leads to more diverse and robust models.</li>
+            <li><strong>Building decision trees:</strong> Each decision tree is grown using the selected subset of data and features. The trees are built by recursively partitioning the data based on feature thresholds, aiming to minimize impurity or maximize information gain.</li>
+            <li><strong>Aggregating predictions:</strong> When making predictions, each decision tree in the Random Forest independently predicts the outcome, and the final prediction is determined by aggregating the individual tree predictions. The most common aggregation methods are majority voting for classification problems and averaging for regression problems.</li>
         </ol>
 
         <div >
