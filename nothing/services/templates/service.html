@@ -8,12 +8,23 @@
 <link rel="stylesheet" href={% static 'css/service.css' %}>
 {% endblock cssfiles %}
 
-{% block content%}
-    <h2>Hello This is service page </h2>
-    <div>
-        <form>
-            <input type="text" name="first name" placeholder="Enter first name">
-        </form>
-    </div>
+{% block content %}
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <h2>House price prediction for delhi</h2>
+                <img src="{% static 'images/house.jpg' %}" style="width:250px; height250px;" alt="House Image">
+                    <a href="{% url 'house' %}">ready to go</a>
+            </div>
+        </div>
 
-{% endblock content%}
+        <div class="card">
+            <div class="card-content">
+                <h2>Check whether you will get a loan for house or not</h2>
+                <img src="{% static 'images/loan.jpg' %}" style="width:250px; height250px;" alt="House Image">
+                    <a href="{% url 'loan' %}">ready to go</a>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}

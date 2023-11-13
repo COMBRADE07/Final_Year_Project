@@ -1,8 +1,27 @@
-*{
-margin:0px;
-padding:0px;
+/* dataset.css */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-h2{
-color:green;
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.card-content {
+    padding: 16px;
+}
+
+.card h2 {
+    color: #333;
+}
+
 

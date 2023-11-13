@@ -6,3 +6,9 @@ from django.http import HttpResponse
 
 def service(request):
     return render(request, 'service.html')
+
+def loan(request):
+    return render(request, 'loan.html')
+
+def house(request):
+    return render(request, 'house.html')

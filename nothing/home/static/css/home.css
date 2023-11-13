@@ -1,9 +1,112 @@
-*{
-margin:0px;
-padding:0px;
-}
-h1{
-color:red;
-}
-h2{
-color:green}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        /* Styling for the navigation bar */
+        .navbar {
+            background-color: #333;
+        }
+
+        /* Style for the navigation bar links */
+        .navbar a {
+            float: left;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Style for the active link */
+        .navbar a.active {
+            background-color: #4CAF50;
+        }
+
+        /* Style for the hover effect */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .advantages {
+            margin-bottom: 30px;
+        }
+
+        .disadvantages {
+            margin-bottom: 30px;
+        }
+
+        .list-item {
+            margin-bottom: 10px;
+        }
+        .limg{
+            width:300;
+            height:auto;
+        }
+        .space{
+            margin-bottom:50px;
+        }
