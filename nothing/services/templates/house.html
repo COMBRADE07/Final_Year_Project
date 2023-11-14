@@ -15,84 +15,104 @@
     {% csrf_token %}
 
     <div class="form-group">
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender" required>
-        <option value="">Select Gender</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
+      <label for="dependents">Area:</label>
+      <input type="number" id="dependents" name="area" required>
+    </div>
+
+    <div class="form-group">
+      <label for="married">BHK:</label>
+      <select id="married" name="bhk" required>
+        <option value="">Select BHK</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="married">Bathroom:</label>
+      <select id="married" name="bathroom" required>
+        <option value="">Select Bathroom</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label for="married">Married:</label>
-      <select id="married" name="married" required>
-        <option value="">Select Married</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
+      <label for="education">Furnished :</label>
+      <select id="education" name="furnished" required>
+        <option value="">Select Furnished</option>
+        <option value="1">Furnished</option>
+        <option value="0">Semi-Furnished</option>
+        <option value="2">Unfurnished</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label for="dependents">Dependents:</label>
-      <input type="number" id="dependents" name="dependents" required>
-    </div>
-
-    <div class="form-group">
-      <label for="education">Education:</label>
-      <select id="education" name="education" required>
-        <option value="">Select Education</option>
-        <option value="Graduate">Graduate</option>
-        <option value="Not Graduate">Not Graduate</option>
+      <label for="education">Locality: </label>
+      <select id="education" name="furnished" required>
+        <option value="">Select Locality</option>
+        <option value="0">Rohini Sector</option>
+        <option value="1">Dwarka Sector</option>
+        <option value="2">Shahdara</option>
+        <option value="3">Vasant Kunj</option>
+        <option value="4">Paschim Vihar</option>
+        <option value="5">Alaknanda</option>
+        <option value="6">Punjabi Bagh</option>
+        <option value="7">Kalkaji</option>
+        <option value="8">Lajpat Nagar</option>
+        <option value="9">Laxmi Naga</option>
+        <option value="10">Patel Nagar</option>
+        <option value="11">Other</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label for="self-employed">Self Employed:</label>
-      <select id="self-employed" name="self_employed" required>
-        <option value="">Select Self Employed</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
+      <label for="education">Parking :</label>
+      <select id="education" name="Parking" required>
+        <option value="">Select Parking</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label for="applicant-income">Applicant Income:</label>
-      <input type="number" id="applicant-income" name="applicant_income" required>
-    </div>
-
-    <div class="form-group">
-      <label for="coapplicant-income">Coapplicant Income:</label>
-      <input type="number" id="coapplicant-income" name="coapplicant_income" required>
-    </div>
-
-    <div class="form-group">
-      <label for="loan-amount">Loan Amount:</label>
-      <input type="number" id="loan-amount" name="loan_amount" required>
-    </div>
-
-    <div class="form-group">
-      <label for="loan-term">Loan Amount Term:</label>
-      <input type="number" id="loan-term" name="loan_term" required>
-    </div>
-
-    <div class="form-group">
-      <label for="credit-history">Credit History:</label>
-      <input type="number" id="credit-history" name="credit_history" required>
-    </div>
-
-    <div class="form-group">
-      <label for="property-area">Property Area:</label>
-      <select id="property-area" name="property_area" required>
-        <option value="">Select Property Area</option>
-        <option value="Urban">Urban</option>
-        <option value="Rural">Rural</option>
-        <option value="Semiurban">Semiurban</option>
+      <label for="self-employed">Status:</label>
+      <select id="self-employed" name="status" required>
+        <option value="">Select Status</option>
+        <option value="0">Ready_to_move</option>
+        <option value="1">Almost_ready</option>
       </select>
     </div>
 
-
-
-    <input type="submit" value="Submit">
+    <div class="form-group">
+      <label for="self-employed">Transaction:</label>
+      <select id="self-employed" name="transaction" required>
+        <option value="">Select Transaction</option>
+        <option value="0">New Property</option>
+        <option value="1">Resale</option>
+      </select>
+    </div
+    <div class="form-group">
+      <label for="self-employed">Type:</label>
+      <select id="self-employed" name="type" required>
+        <option value="">Select type </option>
+        <option value="0">Builder Floor</option>
+        <option value="1">Apartment</option>
+      </select>
+    </div>
+<br>
+    <div class="form-group">
+      <label for="dependents">Price Per Sqft:</label>
+      <input type="number" id="dependents" name="per_sqft" required>
+    </div>
+   <input type="submit" value="Submit">
   </form>
 
 
