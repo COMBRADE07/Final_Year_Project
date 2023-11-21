@@ -1,5 +1,7 @@
-/* dataset.css */
 
+body{
+margin:0px;
+}
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -12,7 +14,6 @@
     overflow: hidden;
     width: 400px;
     height: 300px;
-    margin: 0 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
