@@ -1,0 +1,26 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title%}
+    Loan presiction result
+{% endblock title%}
+
+{% block cssfiles %}
+<link rel="stylesheet" href={% static 'css/result.css' %}>
+{% endblock cssfiles %}
+
+{% block content%}
+    <h1>Your Requested house Price is here</h1>
+
+  <div class="result-container">
+    {% if userdata.House_Status %}
+      <p class="result-label">House Price:</p>
+        <div class="result-value">
+          <p>
+                      Congratulation, you will get house at {{ userdata.House_Status }}
+          </p>
+        </div>
+      {% endif %}
+
+  </div>
+{% endblock content%}
+

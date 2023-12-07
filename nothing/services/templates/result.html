@@ -1,0 +1,37 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title%}
+    Loan presiction result
+{% endblock title%}
+
+{% block cssfiles %}
+<link rel="stylesheet" href={% static 'css/result.css' %}>
+{% endblock cssfiles %}
+
+{% block content%}
+    <h1>Loan Status Result</h1>
+
+  <div class="result-container">
+    {% if userdata.Loan_Status %}
+      <p class="result-label">Loan Amount:</p>
+      {% if userdata.Loan_Status == 1 %}
+        <div class="result-value">
+          <img src="{% static 'images/approved.png' %}" alt="Passed" width="200" height="200">
+          <p>
+                      Congratulation your loan has been approved
+          </p>
+        </div>
+      {% else %}
+        <p class="result-value">{{ userdata.Loan_Status }}</p>
+      {% endif %}
+    {% else %}
+      <div class="result-value">
+          <img src="{% static 'images/rejected.png' %}" alt="Rejected" width="300" height="200">
+          <p>
+                      Extremely sorry! you are not eligible for this loan.
+          </p>
+        </div>
+    {% endif %}
+  </div>
+{% endblock content%}
+
